@@ -27,8 +27,8 @@ scissors.addEventListener("click",()=>{
    res()
  })
  function c(){
-choices=["rock","paper","scissors"]
-i=Math.floor(Math.random()*3)
+let choices=["rock","paper","scissors"]
+let i=Math.floor(Math.random()*3)
 compchoice=choices[i]
 msg.textContent=compchoice
 }
@@ -41,6 +41,7 @@ function res(){
     msg.textContent=`you won`
     yp.textContent=you+=1
       msg.classList.remove("draw")
+        msg.classList.remove("lose")  
     msg.classList.add("win")
   }
     else if(userchoice=="rock"&&compchoice=="paper"){
@@ -54,6 +55,7 @@ function res(){
     msg.textContent=`you won`
     yp.textContent=you+=1
   msg.classList.remove("draw")
+             msg.classList.remove("lose")
       msg.classList.add("win")
   }
    else if(userchoice=="paper"&&compchoice=="scissors"){
@@ -67,6 +69,7 @@ function res(){
     msg.textContent=`you won`
   yp.textContent=you+=1
   msg.classList.remove("draw")
+  msg.classList.remove("lose")
   msg.classList.add("win")
   }
    else if(userchoice=="scissors"&&compchoice=="rock"){
