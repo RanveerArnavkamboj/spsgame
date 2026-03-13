@@ -38,43 +38,43 @@ function res(){
     msg.classList.add("draw")
   }
   else if(userchoice=="rock"&&compchoice=="scissors"){
-    msg.textContent=`you won`
+   msg.textContent=`you won your ${userchoice} beats ${compchoice}`  
     yp.textContent=you+=1
       msg.classList.remove("draw")
         msg.classList.remove("lose")  
     msg.classList.add("win")
   }
     else if(userchoice=="rock"&&compchoice=="paper"){
-    msg.textContent=`you lose`
+    msg.textContent=`you lose computer's ${compchoice} beats your ${userchoice}`
   cp.textContent=ci+=1
     msg.classList.remove("draw")
  msg.classList.remove("win")
       msg.classList.add("lose")
   }
      else if(userchoice=="paper"&&compchoice=="rock"){
-    msg.textContent=`you won`
+   msg.textContent=`you won your ${userchoice} beats ${compchoice}`  
     yp.textContent=you+=1
   msg.classList.remove("draw")
              msg.classList.remove("lose")
       msg.classList.add("win")
   }
    else if(userchoice=="paper"&&compchoice=="scissors"){
-    msg.textContent=`you lose`
+       msg.textContent=`you lose computer's ${compchoice} beats your ${userchoice}`
       cp.textContent=ci+=1
   msg.classList.remove("draw")
        msg.classList.remove("win")
       msg.classList.add("lose")
   }
    else if(userchoice=="scissors"&&compchoice=="paper"){
-    msg.textContent=`you won`
+     msg.textContent=`you won your ${userchoice} beats ${compchoice}`
   yp.textContent=you+=1
   msg.classList.remove("draw")
   msg.classList.remove("lose")
   msg.classList.add("win")
   }
    else if(userchoice=="scissors"&&compchoice=="rock"){
-    msg.textContent=`you lose`
-    cp.textContent=ci+=1
+
+     msg.textContent=`you lose computer's ${compchoice} beats your ${userchoice}`  cp.textContent=ci+=1
   msg.classList.remove("draw")
     msg.classList.remove("win")
     msg.classList.add("lose")
