@@ -74,7 +74,8 @@ function res(){
   }
    else if(userchoice=="scissors"&&compchoice=="rock"){
 
-     msg.textContent=`you lose computer's ${compchoice} beats your ${userchoice}`  cp.textContent=ci+=1
+     msg.textContent=`you lose computer's ${compchoice} beats your ${userchoice}` 
+           cp.textContent=ci+=1
   msg.classList.remove("draw")
     msg.classList.remove("win")
     msg.classList.add("lose")
