@@ -3,7 +3,7 @@
       let userchoice="" 
       let compchoice=""  
       let yp=document.querySelector(".you")
-      let cp=document.querySelector(".Comp")
+      let cp=document.querySelector(".comp")
       let msg=document.querySelector(".msg")
       let rock=document.querySelector(".rock")
        let paper=document.querySelector(".paper")
